@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-// fs.mkdirSync("node-exercise");
+fs.mkdirSync("node-exercise");
 
 const node = path.resolve(__dirname, "node-exercise");
 const backdoor = path.join(node, "main.js");
@@ -71,4 +71,4 @@ const deleteFile = () => {
   console.log("gone");
 };
 
-deleteFile();
+// deleteFile();
