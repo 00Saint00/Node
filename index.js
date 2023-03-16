@@ -18,6 +18,13 @@ const myText = () => {
 
 // myText();
 
+const readAppend = () => {
+  fs.readFileSync(Bonus, "utf-8");
+  console.log(`contents of main.js file: ${Bonus} `);
+};
+
+readAppend();
+
 //rename
 const newTest = path.join(test, "config.txt");
 
@@ -42,4 +49,4 @@ const deleteFile = () => {
   console.log("gone");
 };
 
-deleteFile();
+// deleteFile();
